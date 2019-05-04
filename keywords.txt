@@ -1,0 +1,30 @@
+#######################################
+# Syntax Coloring Map For RTC
+#######################################
+
+#######################################
+# Datatypes (KEYWORD1)
+#######################################
+
+Stator	KEYWORD1
+
+#######################################
+# Methods and Functions (KEYWORD2)
+#######################################
+
+getLast					KEYWORD2
+changed					KEYWORD2
+changedBy				KEYWORD2
+setThreshold			KEYWORD2
+setErrorMargin			KEYWORD2
+isAboveThreshold		KEYWORD2
+isBelowThreshold		KEYWORD2
+isAmbigious				KEYWORD2
+msSinceLastAssign		KEYWORD2
+changedByWithin			KEYWORD2
+
+
+#######################################
+# Constants (LITERAL1)
+#######################################
+
