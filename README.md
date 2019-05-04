@@ -28,8 +28,8 @@ void setup() {
   Serial.begin(115200);
   // Set a point where we consider our state to have crossed a threshold from false to true
   sensor.setThreshold(370);
-  // Set an error margin, so anything below 112 will be considered below threshold
-  // and everything above 128 will be considered above threshold
+  // Set an error margin, so anything below 362 will be considered below threshold
+  // and everything above 378 will be considered above threshold
   // this avoids getting spammed when the sensor reads close to the threshold
   sensor.setErrorMargin(8);
   // set intial state
