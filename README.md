@@ -1,7 +1,7 @@
 
 Stator
 ======
-A library for keeping track of state changes. Turning your dumb numbers and strings into smart objects that know what was happening to them and when.
+A library for keeping track of state changes. Turning your dumb numbers and strings into smart objects that know what was happening to them and when. You can use them just as you are used to with a normal variable but will be provided with some extended functionality.
 
 It's goal is to improve readability of typical constructs used in Arduino sketches and other C++ environments and make a lot of code easier to write.
 
