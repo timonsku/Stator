@@ -33,6 +33,7 @@ public:
   void operator = (T state) { 
     _lastState = _state;
     _state = state;
+    _msLastAssign = MILLIS();
   }
 
   long msSinceLastAssign(){
