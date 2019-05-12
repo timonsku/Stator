@@ -11,6 +11,7 @@ While targeted at Arduino, it supports standard C++11. There is no dependency on
 So feel free to use this in f.e. openFrameworks or your stand-alone C++ Raspberry Pi app.
 
 
+It's primarily meant for rapid prototyping. If you don't utilize most of its features there is a hit on memory usage on very RAM restricted environments, especially the old 8bit Arduinos. I mostly use the newer ARM dev boards now a days like the Adafruit Feather M0 or Adafruit Metro M0 where you have a lot more RAM available. So I've written this library with those more performant platforms in mind.
 
 
 Examples
