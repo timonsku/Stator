@@ -1,7 +1,7 @@
 
 Stator
 ======
-A library for keeping track of state changes. Turning your dumb numbers and strings into smart objects that know what was happening to them and when. You can use them just as you are used to with a normal variable but will be provided with some extended functionality.
+A library for keeping track of state changes. Turning your "dumb" numbers and strings into "smart" objects that know what was happening to them and when. You can use them just as you are used to with a normal variable but will be provided with some extended functionality.
 
 It's goal is to improve readability of typical constructs used in Arduino sketches and other C++ environments and make a lot of code easier to write.
 
@@ -126,39 +126,49 @@ Reference
 T stands for the type or class you are using Stator with.
 
 `T getLast()`
-	Returns the value that was previously assigned
+
+Returns the value that was previously assigned
 
 `bool changed()`
-	Whether the variable has changed since its last assignment
+
+Whether the variable has changed since its last assignment
 
 `long msSinceLastAssign()`
-	The duration in ms since the last assignment happened
+
+The duration in ms since the last assignment happened
 
 
 **Additionally for types or classes that support arithmetic (can do math):**
 
 `bool changedBy(T amount)`
-	True if latest assignment changed value since the previous assignment by at least the value of `amount`
+
+True if latest assignment changed value since the previous assignment by at least the value of `amount`
 
 `bool changedByWithin(T amount, long ms)`
-	True when value changed by `amount` within the time frame of `ms`
+
+True when value changed by `amount` within the time frame of `ms`
 
 `bool changedByAfter(T amount, long ms)`
-	True when value changed by `amount` and it took at least `ms` since the previous assignment was made
+
+True when value changed by `amount` and it took at least `ms` since the previous assignment was made
 
 `void setThreshold(T threshold)`
 	Set the threshold hold value used to determine if something is above or below the threshold
 
 `void setErrorMargin(T margin)`
-	A margin that is added above and below the threshold value. 
-	So a threshold of 120 and error margin of 5 would mean that only values
-	below 115 and above 125 would be considered to be valid. Anything in between is considered ambiguous.
+
+A margin that is added above and below the threshold value. 
+So a threshold of 120 and error margin of 5 would mean that only values
+below 115 and above 125 would be considered to be valid. Anything in between is considered ambiguous.
 
 `bool isAboveThreshold()`
-	True when value crossed above threshold plus error margin
+
+True when value crossed above threshold plus error margin
 
 `bool isBelowThreshold()`
-	True when value crossed below threshold minus error margin
+
+True when value crossed below threshold minus error margin
 
 `bool isAmbigiuous()`
-	True when value is within error margin
+
+True when value is within error margin
